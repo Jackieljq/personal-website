@@ -21,42 +21,46 @@ export default function Hero() {
             on clean architecture, performance, and observability.
           </p>
   
-          <div className="contact-block">
-            <p>Perth, Western Australia</p>
-            <p>
-              Email:
-              <a
-                href="mailto:jackieli_jiaqi@outlook.com"
-                className="link"
-                style={{ marginLeft: "4px" }}
-              >
-                jackieli_jiaqi@outlook.com
-              </a>
-            </p>
-            <p>
-              GitHub:
-              <a
-                href="https://github.com/Jackieljq"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="link"
-                style={{ marginLeft: "4px" }}
-              >
-                github.com/Jackieljq
-              </a>
-            </p>
-            <p>
-              LinkedIn:
-              <a
-                href="https://www.linkedin.com/in/jiaqi-li-563a18392/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="link"
-                style={{ marginLeft: "4px" }}
-              >
-                linkedin.com/in/jiaqi-li-563a18392
-              </a>
-            </p>
+          {/* Contact block at the top, with its own anchor id */}
+          <div id="contact" style={{ marginTop: "1.25rem" }}>
+            <p className="section-heading-title">Contact</p>
+            <div className="contact-block">
+              <p>Perth, Western Australia</p>
+              <p>
+                Email:
+                <a
+                  href="mailto:jackieli_jiaqi@outlook.com"
+                  className="link"
+                  style={{ marginLeft: "4px" }}
+                >
+                  jackieli_jiaqi@outlook.com
+                </a>
+              </p>
+              <p>
+                GitHub:
+                <a
+                  href="https://github.com/Jackieljq"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="link"
+                  style={{ marginLeft: "4px" }}
+                >
+                  github.com/Jackieljq
+                </a>
+              </p>
+              <p>
+                LinkedIn:
+                <a
+                  href="https://www.linkedin.com/in/jiaqi-li-563a18392/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="link"
+                  style={{ marginLeft: "4px" }}
+                >
+                  linkedin.com/in/jiaqi-li-563a18392
+                </a>
+              </p>
+            </div>
           </div>
   
           <div className="hero-actions">
