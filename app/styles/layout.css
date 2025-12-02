@@ -177,4 +177,35 @@ html.theme-light {
       width: 60%;
     }
   }
+  /* Global two-column layout: left sidebar + right content */
+
+.layout-root {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-top: 3rem;
+  }
+  
+  .layout-sidebar,
+  .layout-main {
+    width: 100%;
+  }
+  
+  @media (min-width: 900px) {
+    .layout-root {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    .layout-sidebar {
+      width: 40%;
+      position: sticky;
+      top: 5rem; /* 可以根据 header 高度调整，比如 4rem / 6rem */
+      align-self: flex-start;
+    }
+  
+    .layout-main {
+      width: 60%;
+    }
+  }
   

@@ -1,40 +1,38 @@
 export default function SkillsSection() {
     return (
-      <section id="skills" className="section">
-        <div className="section-row">
-          <div className="section-heading">
-            <h2 className="section-heading-title">Skills</h2>
-            <p className="section-heading-subtitle">
-              Languages, frameworks, and tools I work with.
-            </p>
+      <section id="skills" className="section content-section">
+        <h2 className="section-heading">Skills</h2>
+  
+        <div className="skills-grid">
+          <div>
+            <h3 className="skills-category">Languages & Frameworks</h3>
+            <ul className="skills-list">
+              <li>Python</li>
+              <li>JavaScript / TypeScript</li>
+              <li>React / Next.js</li>
+              <li>Java</li>
+              <li>SQL</li>
+            </ul>
           </div>
-          <div className="section-body">
-            <div className="card">
-              <h3 className="badge-text">Languages</h3>
-              <p className="text-muted">
-                Python, TypeScript, JavaScript, Java, SQL, Bash
-              </p>
-            </div>
-            <div className="card">
-              <h3 className="badge-text">Web & Frameworks</h3>
-              <p className="text-muted">
-                React, Next.js, Flask, basic Node.js, Tailwind CSS
-              </p>
-            </div>
-            <div className="card">
-              <h3 className="badge-text">Data & Analytics</h3>
-              <p className="text-muted">
-                Pandas, NumPy, optimisation algorithms, data visualisation, ETL
-                and data warehousing concepts
-              </p>
-            </div>
-            <div className="card">
-              <h3 className="badge-text">Tools & Platforms</h3>
-              <p className="text-muted">
-                Git and GitHub, VS Code, Jupyter, basic AWS (EC2, S3), Firebase,
-                Docker fundamentals
-              </p>
-            </div>
+  
+          <div>
+            <h3 className="skills-category">Tools & Platforms</h3>
+            <ul className="skills-list">
+              <li>AWS</li>
+              <li>Docker / GitHub Actions</li>
+              <li>PostgreSQL / MySQL</li>
+              <li>Power BI / Pandas</li>
+            </ul>
+          </div>
+  
+          <div>
+            <h3 className="skills-category">Key Capabilities</h3>
+            <ul className="skills-list">
+              <li>Full-stack Web Development</li>
+              <li>Data Engineering & Analytics</li>
+              <li>Cloud Deployments</li>
+              <li>System Design & Documentation</li>
+            </ul>
           </div>
         </div>
       </section>

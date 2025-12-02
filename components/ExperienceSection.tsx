@@ -1,43 +1,49 @@
 export default function ExperienceSection() {
     return (
-      <section id="experience" className="section">
-        <div className="section-row">
-          <div className="section-heading">
-            <h2 className="section-heading-title">Experience</h2>
-            <p className="section-heading-subtitle">
-              Where I&apos;ve applied my skills in real projects.
-            </p>
-          </div>
-          <div className="section-body">
-            <div className="card">
-              <div className="card-header">
-                <div>
-                  <h3 className="card-title">
-                    R&amp;D Engineer · Shenzhen Huaji Technology
-                  </h3>
-                  <p className="card-subtitle">
-                    Base Station OAM Desktop Application
-                  </p>
-                </div>
-                <span className="badge-text">
-                  Python · PyQt · SSH · 4G Private Network
-                </span>
-              </div>
-              <ul className="card-list">
-                <li>
-                  Developed an enterprise-grade desktop OAM tool for 4G private
-                  network base stations using Python and PyQt.
-                </li>
-                <li>
-                  Integrated with base station OAM server APIs over SSH to support
-                  configuration, monitoring, and maintenance workflows.
-                </li>
-                <li>
-                  Participated in requirements analysis, debugging, and upgrades,
-                  and provided early-stage technical support to FAEs and end-users.
-                </li>
-              </ul>
+      <section id="experience" className="section content-section">
+        <h2 className="section-heading">Experience</h2>
+  
+        <div className="timeline">
+          {/* Job 1 */}
+          <div className="timeline-item">
+            <div className="timeline-header">
+              <h3 className="timeline-role">R&D Engineer</h3>
+              <span className="timeline-date">2021 – 2022</span>
             </div>
+            <p className="timeline-company">Shenzhen Huaji Technology</p>
+            <ul className="timeline-list">
+              <li>Developed desktop OAM software for enterprise 4G base stations using Python and PyQt.</li>
+              <li>Implemented SSH automation tools for base station configuration and diagnostics.</li>
+              <li>Participated in architecture design, debugging and field engineering support.</li>
+            </ul>
+          </div>
+  
+          {/* Job 2 - Your projects / uni work */}
+          <div className="timeline-item">
+            <div className="timeline-header">
+              <h3 className="timeline-role">AI Trading Bots Developer (Project)</h3>
+              <span className="timeline-date">2024 – 2025</span>
+            </div>
+            <p className="timeline-company">University of Western Australia</p>
+            <ul className="timeline-list">
+              <li>Implemented optimisation-driven trading bots (FSA, FPA, MRFO, SFLA, GbSA).</li>
+              <li>Built Python pipelines for parameter evaluation using historical BTC data.</li>
+              <li>Designed clear metrics, charts, and technical analysis indicators.</li>
+            </ul>
+          </div>
+  
+          {/* Job 3 */}
+          <div className="timeline-item">
+            <div className="timeline-header">
+              <h3 className="timeline-role">Data Engineering & IoT Developer (Project)</h3>
+              <span className="timeline-date">2024 – 2025</span>
+            </div>
+            <p className="timeline-company">UWA Smart Garden System</p>
+            <ul className="timeline-list">
+              <li>Built IoT system using ESP32, Python backend, SQLite and React dashboard.</li>
+              <li>Designed API endpoints, automated ingestion, and visual monitoring UI.</li>
+              <li>Implemented sensor calibration, error detection and real-time updates.</li>
+            </ul>
           </div>
         </div>
       </section>

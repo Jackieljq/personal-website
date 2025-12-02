@@ -149,3 +149,94 @@
 .intro-contact {
   margin-top: 1.75rem;
 }
+
+/* Skills grid layout (similar to Brittany) */
+.skills-grid {
+  margin-top: 1.25rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 700px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.skills-category {
+  font-weight: 600;
+  color: var(--text-color);
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+}
+
+.skills-list {
+  display: grid;
+  gap: 0.25rem;
+  color: var(--muted-text);
+  font-size: 0.9rem;
+}
+
+/* Timeline section (Brittany-style) */
+.timeline {
+  margin-top: 1.25rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.timeline-item {
+  border-left: 1px solid var(--border-color);
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: var(--accent-soft);
+  border-radius: 999px;
+  position: absolute;
+  left: -5px;
+  top: 0.4rem;
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.timeline-role {
+  font-size: 1rem;
+}
+
+.timeline-date {
+  font-size: 0.8rem;
+  color: var(--muted-text);
+}
+
+.timeline-company {
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.timeline-list {
+  margin-top: 0.5rem;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+  color: var(--muted-text);
+  line-height: 1.5;
+}
+
