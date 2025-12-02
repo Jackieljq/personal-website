@@ -1,23 +1,43 @@
 export default function ContactSection() {
     return (
-      <section id="contact" className="space-y-3 pb-8">
-        <h2 className="text-lg font-semibold text-slate-100">Contact</h2>
-        <p className="text-sm text-slate-300">
+      <section id="contact" className="section">
+        <h2 className="section-title">Contact</h2>
+        <p className="text-muted">
           I am currently based in Perth and open to Junior / Graduate Software
           Engineer, Full-Stack, or related roles.
         </p>
-        <div className="space-y-1 text-sm text-slate-300">
+        <div className="text-muted" style={{ marginTop: "0.5rem" }}>
           <p>
             Email:{" "}
             <a
               href="mailto:jackieli_jiaqi@outlook.com"
-              className="text-sky-400 hover:underline"
+              className="link"
             >
               jackieli_jiaqi@outlook.com
             </a>
           </p>
-          <p>GitHub: github.com/Jackieljq</p>
-          <p>LinkedIn: (add your LinkedIn URL here)</p>
+          <p>
+            GitHub:{" "}
+            <a
+              href="https://github.com/Jackieljq"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link"
+            >
+              github.com/Jackieljq
+            </a>
+          </p>
+          <p>
+            LinkedIn:{" "}
+            <a
+              href="https://www.linkedin.com/in/jiaqi-li-563a18392/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link"
+            >
+              linkedin.com/in/jiaqi-li-563a18392
+            </a>
+          </p>
         </div>
       </section>
     );
