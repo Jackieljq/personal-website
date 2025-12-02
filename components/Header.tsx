@@ -5,26 +5,15 @@ export default function Header() {
           <span className="text-sm font-semibold text-slate-900">
             Jiaqi (Jackie) Li
           </span>
-          <nav className="space-x-4 text-xs md:text-sm">
-            <a href="#about" className="text-slate-600 hover:text-sky-700">
-              About
-            </a>
-            <a href="#skills" className="text-slate-600 hover:text-sky-700">
-              Skills
-            </a>
-            <a href="#experience" className="text-slate-600 hover:text-sky-700">
-              Experience
-            </a>
-            <a href="#projects" className="text-slate-600 hover:text-sky-700">
-              Projects
-            </a>
-            <a href="#education" className="text-slate-600 hover:text-sky-700">
-              Education
-            </a>
-            <a href="#contact" className="text-slate-600 hover:text-sky-700">
-              Contact
-            </a>
-          </nav>
+          <nav className="header-nav">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+            </nav>
+
         </div>
       </header>
     );
