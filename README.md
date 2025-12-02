@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Portfolio Website
 
-## Getting Started
+A clean and modern personal portfolio website built with **Next.js 14**, **React**, and **Tailwind CSS** — inspired by Brittany Chiang’s layout.  
+The site features a **sticky left sidebar** and a **scrollable right content area**, with modular styling and full responsiveness.
 
-First, run the development server:
+---
+
+## ✨ Features
+
+- 🧭 Sticky left sidebar with smooth navigation  
+- 🌗 Light / Dark mode with theme toggle  
+- 🎨 Clean typography and modular CSS (layout, components, typography, hero)  
+- 📱 Fully responsive design  
+- ⚡ Built with Next.js App Router (server components)  
+- 🎯 Portfolio sections:
+  - About  
+  - Skills  
+  - Experience (timeline style)  
+  - Projects  
+  - Education  
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 14  
+- **UI:** React, Tailwind CSS  
+- **Styling:** Modular CSS + Tailwind utilities  
+- **Language:** TypeScript  
+- **Deployment:** Vercel  
+
+---
+
+## 📁 Project Structure
+personal-website/
+│
+├─ app/
+│  ├─ page.tsx
+│  ├─ layout.tsx
+│  ├─ globals.css
+│  └─ styles/
+│     ├─ layout.css
+│     ├─ typography.css
+│     ├─ components.css
+│     └─ hero.css
+│
+├─ components/
+│  ├─ Header.tsx
+│  ├─ IntroSidebar.tsx      ← Sticky left column
+│  ├─ Hero.tsx              ← About section
+│  ├─ SkillsSection.tsx
+│  ├─ ExperienceSection.tsx
+│  ├─ ProjectsSection.tsx
+│  ├─ EducationSection.tsx
+│  └─ ThemeToggle.tsx
+│
+└─ public/
+
+---
+
+## 🚀 Local Development
+
+### 1. Clone repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+git clone https://github.com/Jackieljq/personal-website.git
+cd personal-website
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies
+```bash
+npm install
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Start dev server
+```bash
+http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# 🌐 Deployment on Vercel
 
-## Learn More
+Vercel is the official hosting platform for Next.js and provides seamless deployment.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ▶ How to open the deployed website
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Your live deployed site is available at:
 
-## Deploy on Vercel
+👉 **https://personal-website-tau-gules.vercel.app/**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This link is public and always serves the latest code from the `main` branch.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## ▶ Deploy to Vercel (One-Click)
+
+1. Go to **https://vercel.com**
+2. Log in with GitHub
+3. Click **Add New Project**
+4. Select your repository **personal-website**
+5. Keep all default settings:
+   - Framework: **Next.js**
+   - Build Command: `next build`
+   - Output Directory: `.next`
+6. Click **Deploy**
+
+After a few seconds, your project will be live.
+
+---
+
+## ▶ Automatic Deployment (Git Push → Auto Deploy)
+
+Every push to GitHub automatically triggers a new Vercel deployment.
+
+Example workflow:
+
+```bash
+git add .
+git commit -m "update website layout"
+git push
