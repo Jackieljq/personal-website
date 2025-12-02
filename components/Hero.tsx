@@ -1,14 +1,14 @@
 export default function HeroSection() {
     return (
       <section id="top" className="section">
-        <p className="hero-eyebrow">Junior / Graduate Software Engineer</p>
+        <p className="hero-eyebrow"> Software Engineer</p>
   
-        {/* 主标题 */}
+       
         <h1 className="hero-title">
           Hi, I&apos;m <span className="hero-highlight">Jiaqi (Jackie) Li</span>
         </h1>
   
-        {/* 简介 */}
+        
         <p className="text-muted hero-summary">
           Master of Information Technology graduate based in Perth, WA. I enjoy
           building practical software solutions across web, data, and cloud—
