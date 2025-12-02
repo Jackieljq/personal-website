@@ -13,19 +13,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jiaqi (Jackie) Li - Portfolio",
-  description: "Personal portfolio website of Jiaqi (Jackie) Li",
+  title: "Jiaqi (Jackie) Li · Software Engineer",
+  description:
+    "Personal website and portfolio of Jiaqi (Jackie) Li, a software engineer based in Perth, WA.",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="theme-light">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-sky-50 text-slate-900`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>

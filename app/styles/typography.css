@@ -1,0 +1,85 @@
+/* General text */
+
+.section-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .text-muted {
+    color: var(--muted-text);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  
+  /* Section heading text */
+  
+  .section-heading-title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--section-label);
+  }
+  
+  .section-heading-subtitle {
+    margin-top: 0.35rem;
+    font-size: 0.85rem;
+    color: var(--section-subtitle);
+  }
+  
+  /* Hero text */
+  
+  .hero-eyebrow {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--section-label);
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+  }
+  
+  .hero-highlight {
+    color: var(--accent);
+  }
+  
+  .hero-summary {
+    margin-top: 0.75rem;
+    max-width: 38rem;
+  }
+  
+  .hero-tagline {
+    margin-top: 0.5rem;
+    max-width: 40rem;
+  }
+  
+  /* Hero secondary link */
+  
+  .hero-secondary-link {
+    font-size: 0.8rem;
+    color: var(--muted-text);
+  }
+  
+  .hero-secondary-link:hover {
+    color: var(--accent);
+  }
+  
+  /* Sidebar text */
+  
+  .hero-sidebar-meta {
+    font-size: 0.75rem;
+    color: var(--sidebar-muted);
+  }
+  
+  .hero-sidebar-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--section-subtitle);
+  }
+  

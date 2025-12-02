@@ -1,0 +1,97 @@
+/* Hero layout */
+
+.hero-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+  
+  .hero-main {
+    flex: 2;
+  }
+  
+  .hero-sidebar {
+    flex: 1;
+  }
+  
+  /* Sidebar card */
+  
+  .hero-sidebar-card {
+    border-radius: 1rem;
+    background: var(--sidebar-bg);
+    color: var(--sidebar-text);
+    padding: 1rem;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.35);
+    display: grid;
+    gap: 0.75rem;
+  }
+  
+  /* Avatar */
+  
+  .hero-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 999px;
+    background: radial-gradient(circle at 30% 30%, #38bdf8, #0369a1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #f9fafb;
+    box-shadow: 0 8px 20px rgba(8, 47, 73, 0.6);
+  }
+  
+  /* Tech activity bars */
+  
+  .tech-pulse-row {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.25rem;
+    margin-top: 0.5rem;
+  }
+  
+  .tech-pulse-bar {
+    width: 6px;
+    height: 16px;
+    border-radius: 999px;
+    background: var(--accent);
+    opacity: 0.8;
+    transform-origin: bottom;
+    animation: pulseBar 1.2s ease-in-out infinite;
+  }
+  
+  .tech-pulse-bar:nth-child(2) {
+    animation-delay: 0.15s;
+  }
+  
+  .tech-pulse-bar:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  
+  @keyframes pulseBar {
+    0%,
+    100% {
+      transform: scaleY(0.5);
+      opacity: 0.5;
+    }
+    50% {
+      transform: scaleY(1.4);
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive hero layout */
+  
+  @media (min-width: 768px) {
+    .hero-layout {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  
+    .hero-sidebar {
+      max-width: 18rem;
+    }
+  }
+  
