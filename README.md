@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-A clean and modern personal portfolio website built with **Next.js 14**, **React**, and **Tailwind CSS** — inspired by Brittany Chiang’s layout.  
+A clean and modern personal portfolio website built with **Next.js 14**, **React**, and **Tailwind CSS** — inspired by Brittany Chiang's layout.  
 The site features a **sticky left sidebar** and a **scrollable right content area**, with modular styling and full responsiveness.
 
 ---
@@ -32,6 +32,8 @@ The site features a **sticky left sidebar** and a **scrollable right content are
 ---
 
 ## 📁 Project Structure
+
+```
 personal-website/
 │
 ├─ app/
@@ -55,6 +57,7 @@ personal-website/
 │  └─ ThemeToggle.tsx
 │
 └─ public/
+```
 
 ---
 
@@ -65,16 +68,29 @@ personal-website/
 ```bash
 git clone https://github.com/Jackieljq/personal-website.git
 cd personal-website
+```
 
-2. Install dependencies
+### 2. Install dependencies
+
 ```bash
 npm install
+```
 
-3. Start dev server
+### 3. Start dev server
+
 ```bash
-http://localhost:3000
+npm run dev
+```
 
-# 🌐 Deployment on Vercel
+Open your browser and navigate to:
+
+```
+http://localhost:3000
+```
+
+---
+
+## 🌐 Deployment on Vercel
 
 Vercel is the official hosting platform for Next.js and provides seamless deployment.
 
@@ -116,3 +132,31 @@ Example workflow:
 git add .
 git commit -m "update website layout"
 git push
+```
+
+Vercel will automatically:
+- Detect the push
+- Build your project
+- Deploy the new version
+- Provide a unique preview URL for each commit
+
+---
+
+## 📝 License
+
+MIT License - feel free to use this project for your own portfolio!
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+---
+
+## 👤 Author
+
+**Your Name**
+
+- GitHub: [@Jackieljq](https://github.com/Jackieljq)
+- Website: [https://personal-website-tau-gules.vercel.app/](https://personal-website-tau-gules.vercel.app/)
