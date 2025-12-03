@@ -113,6 +113,10 @@ html.theme-light {
     padding: 0.15rem 0;
     transition: color 0.15s ease;
   }
+  .header-nav a,
+.header-nav a:visited {
+  color: var(--muted-text);
+}
   
   .header-nav a:hover {
     color: var(--accent);
