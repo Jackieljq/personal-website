@@ -8,7 +8,7 @@ export default function ExperienceSection() {
           <div className="timeline-item">
             <div className="timeline-header">
               <h3 className="timeline-role">R&D Engineer</h3>
-              <span className="timeline-date">2021 – 2022</span>
+              <span className="timeline-date">2022 – 2025</span>
             </div>
             <p className="timeline-company">Shenzhen Huaji Technology</p>
             <ul className="timeline-list">

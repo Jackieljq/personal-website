@@ -1,5 +1,7 @@
 /* ===== Theme variables ===== */
-
+html {
+  font-size: 20px; 
+}
 html.theme-light {
     --bg-color: #f8fafc;
     --text-color: #0f172a;
