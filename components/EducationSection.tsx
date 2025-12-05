@@ -9,45 +9,36 @@ export default function EducationSection() {
           </p>
         </div>
 
-        <div className="section-body">
+        <div className="projects-list">
           {/* Master */}
-          <div className="card">
-            <div className="card-header">
-              <div>
-                <h3 className="card-title">Master of Information Technology</h3>
-                <p className="badge-text">
-                  The University of Western Australia · Perth, WA
-                </p>
-              </div>
-              <span className="badge-text">2023 – 2025</span>
-            </div>
-            <p className="text-muted" style={{ marginTop: "0.25rem" }}>
-              Two-year full-time program with coursework across software
-              requirements and design, project management, software testing and
-              quality assurance, cloud computing, data warehousing, relational
-              databases, Internet of Things, business intelligence, cyber
-              security, and supply chain analytics.
+          <article className="project-card">
+            <header className="project-header">
+              <h3 className="project-title">Master of Information Technology</h3>
+              <span className="project-meta">
+                University of Western Australia · Perth
+              </span>
+            </header>
+
+            <p className="project-summary text-muted">
+              Two-year full-time program covering software engineering, cloud computing,
+              data warehousing, relational databases, IoT, BI, and cyber security.
             </p>
-          </div>
+          </article>
 
           {/* Bachelor */}
-          <div className="card">
-            <div className="card-header">
-              <div>
-                <h3 className="card-title">Bachelor of Finance</h3>
-                <p className="badge-text">
-                  Guangdong University of Finance · China
-                </p>
-              </div>
-              <span className="badge-text">2018 – 2022</span>
-            </div>
-            <p className="text-muted" style={{ marginTop: "0.25rem" }}>
-              Four-year full-time program covering corporate finance, financial
-              management, accounting, taxation, and management principles,
-              providing a solid understanding of business and financial
-              decision-making.
+          <article className="project-card">
+            <header className="project-header">
+              <h3 className="project-title">Bachelor of Finance</h3>
+              <span className="project-meta">
+                Guangdong University of Finance · China
+              </span>
+            </header>
+
+            <p className="project-summary text-muted">
+              Four-year program focused on corporate finance, financial management,
+              accounting, taxation, and management principles.
             </p>
-          </div>
+          </article>
         </div>
       </div>
     </section>

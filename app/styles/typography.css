@@ -118,4 +118,84 @@ section {
     text-transform: uppercase;
     color: var(--section-label);
   }
+  .project-title {
+    font-size: 0.98rem;
+    font-weight: 600;
+    color: var(--text-color); /* 与 About 保持一致 */
+  }
   
+  .project-meta {
+    color: var(--muted-text);
+  }
+  
+  .project-summary {
+    color: var(--muted-text);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  
+  .project-points {
+    color: var(--muted-text);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  
+  .project-link {
+    color: var(--muted-text);
+  }
+  
+  .project-link:hover {
+    color: var(--accent);
+  }
+  
+  /* ===== Skills unified with section-row layout ===== */
+
+.skills-body {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* 700px 以上变两列 */
+@media (min-width: 700px) {
+  .skills-body {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 1000px 以上变三列（与 Projects 视觉一致） */
+@media (min-width: 1000px) {
+  .skills-body {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Group wrapper */
+.skills-group {
+  display: grid;
+  gap: 0.6rem;
+}
+
+/* Category title */
+.skills-category {
+  font-weight: 600;
+  color: var(--text-color);
+  font-size: 0.95rem;
+}
+
+/* Skills list */
+.skills-list {
+  display: grid;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+  color: var(--muted-text);
+  line-height: 1.5;
+}
+.project-title-link {
+  text-decoration: none;
+}
+
+.project-title-link:hover .project-title {
+  color: var(--accent);
+  text-decoration: underline;
+}
+

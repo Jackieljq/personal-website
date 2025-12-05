@@ -1,173 +1,192 @@
+import Link from "next/link";
+
 export default function ProjectsSection() {
   return (
     <section id="projects" className="section">
       <div className="section-row">
+
+        {/* Left title column */}
         <div className="section-heading">
           <h2 className="section-heading-title">Projects</h2>
           <p className="section-heading-subtitle">
-            Selected work across optimisation, data, IoT, AI integration, and full-stack development.
+            Selected technical work across optimisation, data engineering, IoT, AI integration,
+            and full-stack development.
           </p>
         </div>
 
-        <div className="section-body">
-          {/* Project 1 — Base Station OAM Desktop App */}
-          <div className="card">
-            <div className="card-header">
-              <h3 className="card-title">
-                Base Station OAM Desktop Application
-              </h3>
-              <span className="badge-text">
-                Python · PyQt · SSH · OAM Server API
-              </span>
-            </div>
-            <p className="text-muted" style={{ marginTop: "0.25rem" }}>
-              Enterprise-grade OAM desktop tool for 4G private network base stations,
-              used for configuration, monitoring, and maintenance.
-            </p>
-            <ul className="card-list">
-              <li>Implemented full desktop application using Python and PyQt.</li>
-              <li>Integrated SSH and server APIs for device configuration and diagnostics.</li>
-            </ul>
-            <a className="project-link" href="/projects/oam-desktop">
-              View Details →
-            </a>
-          </div>
+        {/* Right content column */}
+        <div className="projects-list">
 
-          {/* Project 2 — AI Trading Bots */}
-          <div className="card">
-            <div className="card-header">
-              <h3 className="card-title">
-                AI Trading Bots – Optimisation for BTC Strategies
-              </h3>
-              <span className="badge-text">
-                Python · Pandas · Metaheuristic Optimisation
-              </span>
-            </div>
-            <p className="text-muted" style={{ marginTop: "0.25rem" }}>
-              Team project implementing multiple optimisation algorithms to tune
-              Bitcoin trading strategy parameters on historical datasets.
-            </p>
-            <ul className="card-list">
-              <li>Implemented FSA, FPA, MRFO, SFLA, and GbSA for parameter search.</li>
-              <li>Designed evaluation logic for returns, drawdown, and strategy stability.</li>
-            </ul>
-            <a className="project-link" href="/projects/trading-bots">
-              View Details →
-            </a>
-          </div>
+          {/* Project 1 — Base Station OAM */}
+          <article className="project-card">
+            <header className="project-header">
+              <Link href="/projects/oam-desktop" className="project-title-link">
+                <h3 className="project-title">Base Station OAM Desktop Application</h3>
+              </Link>
+              <span className="project-meta">Python · PyQt · SSH · OAM APIs</span>
+            </header>
 
-          {/* Project 3 — WA Traffic Fatality Data Warehouse */}
-          <div className="card">
-            <div className="card-header">
-              <h3 className="card-title">WA Traffic Fatality Data Warehouse</h3>
-              <span className="badge-text">
-                Python · PostgreSQL · ETL · Power BI
-              </span>
-            </div>
-            <p className="text-muted" style={{ marginTop: "0.25rem" }}>
-              End-to-end data warehouse designed for analysing WA road fatality
-              data, from cleaning and modelling to dashboarding.
+            <p className="project-summary text-muted">
+              Enterprise OAM desktop tool for 4G private network base stations, supporting
+              configuration, diagnostics, and maintenance workflows.
             </p>
-            <ul className="card-list">
-              <li>Designed a star schema with fact and dimension tables for crash analysis.</li>
-              <li>Built ETL scripts and interactive dashboards to surface key trends.</li>
+
+            <ul className="project-points">
+              <li>Developed the full desktop application using Python and PyQt.</li>
+              <li>Integrated SSH and server APIs for configuration and diagnostics.</li>
             </ul>
-            <a className="project-link" href="/projects/wa-traffic-warehouse">
-              View Details →
-            </a>
-          </div>
+
+            <Link href="/projects/oam-desktop" className="project-link text-muted">
+             
+            </Link>
+          </article>
+
+          {/* Project 2 — Trading Bots */}
+          <article className="project-card">
+            <header className="project-header">
+              <Link href="/projects/trading-bots" className="project-title-link">
+                <h3 className="project-title">AI Trading Bots – BTC Strategy Optimisation</h3>
+              </Link>
+              <span className="project-meta">Python · Pandas · Metaheuristics</span>
+            </header>
+
+            <p className="project-summary text-muted">
+              Built optimisation-driven algorithms for BTC strategy tuning using historical
+              market data and performance-based evaluation.
+            </p>
+
+            <ul className="project-points">
+              <li>Implemented FSA, FPA, MRFO, SFLA, and GbSA optimisation algorithms.</li>
+              <li>Designed evaluation metrics for return, drawdown, and stability.</li>
+            </ul>
+
+            <Link href="/projects/trading-bots" className="project-link text-muted">
+              
+            </Link>
+          </article>
+
+          {/* Project 3 — WA Traffic Warehouse */}
+          <article className="project-card">
+            <header className="project-header">
+              <Link href="/projects/wa-traffic-warehouse" className="project-title-link">
+                <h3 className="project-title">WA Traffic Fatality Data Warehouse</h3>
+              </Link>
+              <span className="project-meta">Python · PostgreSQL · ETL · Power BI</span>
+            </header>
+
+            <p className="project-summary text-muted">
+              End-to-end data warehouse designed for analysing WA road crash trends,
+              including modelling, ETL, and dashboard reporting.
+            </p>
+
+            <ul className="project-points">
+              <li>Designed a star schema with fact and dimension tables.</li>
+              <li>Developed ETL pipelines and Power BI dashboards.</li>
+            </ul>
+
+            <Link href="/projects/wa-traffic-warehouse" className="project-link text-muted">
+              
+            </Link>
+          </article>
 
           {/* Project 4 — IoT Smart Garden */}
-          <div className="card">
-            <div className="card-header">
-              <h3 className="card-title">
-                IoT Smart Garden – Micro-Climate Control
-              </h3>
-              <span className="badge-text">
-                ESP32 · Blynk · Flask · SQLite · React
-              </span>
-            </div>
-            <p className="text-muted" style={{ marginTop: "0.25rem" }}>
-              IoT system to monitor temperature, humidity, light, and soil moisture
-              with a web dashboard for real-time visualisation.
+          <article className="project-card">
+            <header className="project-header">
+              <Link href="/projects/iot-garden" className="project-title-link">
+                <h3 className="project-title">
+                  IoT Smart Garden – Micro-Climate Monitoring
+                </h3>
+              </Link>
+              <span className="project-meta">ESP32 · Blynk · Flask · SQLite · React</span>
+            </header>
+
+            <p className="project-summary text-muted">
+              Real-time micro-climate monitoring system with device data ingestion,
+              backend processing, and a live dashboard.
             </p>
-            <ul className="card-list">
+
+            <ul className="project-points">
               <li>Collected sensor data via ESP32 and exposed it through Flask APIs.</li>
-              <li>Implemented a React dashboard for real-time and historical metrics.</li>
+              <li>Built a React dashboard for real-time and historical views.</li>
             </ul>
-            <a className="project-link" href="/projects/iot-garden">
-              View Details →
-            </a>
-          </div>
 
-          {/* Project 5 — LLM Adaptation & Monitoring */}
-          <div className="card">
-            <div className="card-header">
-              <h3 className="card-title">
-                LLM Adaptation & Message Monitoring Framework
-              </h3>
-              <span className="badge-text">
-                Mitmproxy · LiteLLM · FastAPI · Langfuse
-              </span>
-            </div>
-            <p className="text-muted" style={{ marginTop: "0.25rem" }}>
-              Reverse-proxy–based framework to adapt non-native LLMs and monitor
-              AI application traffic without modifying client code.
-            </p>
-            <ul className="card-list">
-              <li>Interception and routing of AI requests via Mitmproxy reverse proxy.</li>
-              <li>Extended LiteLLM routing and added logging for Langfuse-style monitoring.</li>
-            </ul>
-            <a className="project-link" href="/projects/llm-framework">
-              View Details →
-            </a>
-          </div>
+            <Link href="/projects/iot-garden" className="project-link text-muted">
+             
+            </Link>
+          </article>
 
-          {/* Project 6 — Game Engine & Cloud Integration */}
-          <div className="card">
-            <div className="card-header">
-              <h3 className="card-title">
-                Game Engine Architecture & Cloud Integration
-              </h3>
-              <span className="badge-text">
-                Cocos · Godot · Douyin Cloud · APIs
-              </span>
-            </div>
-            <p className="text-muted" style={{ marginTop: "0.25rem" }}>
-              Self-directed study of open-source game engine architecture and
-              integration with cloud and advertising platforms.
-            </p>
-            <ul className="card-list">
-              <li>Explored runtime architecture and editor workflows of Cocos and Godot.</li>
-              <li>Investigated adaptation to Douyin Cloud Platform and advertising APIs.</li>
-            </ul>
-            <a className="project-link" href="/projects/game-engine-integration">
-              View Details →
-            </a>
-          </div>
+          {/* Project 5 — LLM Framework */}
+          <article className="project-card">
+            <header className="project-header">
+              <Link href="/projects/llm-framework" className="project-title-link">
+                <h3 className="project-title">
+                  LLM Adaptation & Message Monitoring Framework
+                </h3>
+              </Link>
+              <span className="project-meta">Mitmproxy · LiteLLM · FastAPI · Langfuse</span>
+            </header>
 
-          {/* Project 7 — Firebase-based Chat Application */}
-          <div className="card">
-            <div className="card-header">
-              <h3 className="card-title">
-                Firebase Chat Application (Capstone Project)
-              </h3>
-              <span className="badge-text">
-                React · Firebase Cloud Functions · Firestore
-              </span>
-            </div>
-            <p className="text-muted" style={{ marginTop: "0.25rem" }}>
-              Full-stack chat application built as a capstone project, from UI
-              to backend and real-time data syncing.
+            <p className="project-summary text-muted">
+              Reverse-proxy–based framework enabling non-native LLM adaptation and
+              structured monitoring for AI applications.
             </p>
-            <ul className="card-list">
-              <li>Developed the frontend in React and backend logic with Firebase Functions.</li>
-              <li>Used Firestore for real-time messaging and implemented iterative improvements.</li>
+
+            <ul className="project-points">
+              <li>Intercepted and routed AI requests with Mitmproxy reverse proxy.</li>
+              <li>Extended LiteLLM routing to support custom endpoints and logs.</li>
             </ul>
-            <a className="project-link" href="/projects/firebase-chat">
-              View Details →
-            </a>
-          </div>
+
+            <Link href="/projects/llm-framework" className="project-link text-muted">
+            
+            </Link>
+          </article>
+
+          {/* Project 6 — Game Engine */}
+          <article className="project-card">
+            <header className="project-header">
+              <Link href="/projects/game-engine" className="project-title-link">
+                <h3 className="project-title">Game Engine Architecture & Cloud Integration</h3>
+              </Link>
+              <span className="project-meta">Cocos · Godot · Douyin Cloud · APIs</span>
+            </header>
+
+            <p className="project-summary text-muted">
+              Self-directed exploration of open-source engine internals and adaptation
+              workflows for cloud-based deployment platforms.
+            </p>
+
+            <ul className="project-points">
+              <li>Studied runtime architecture and editor workflows of Cocos & Godot.</li>
+              <li>Explored integration paths for Douyin Cloud Platform.</li>
+            </ul>
+
+            <Link href="/projects/game-engine" className="project-link text-muted">
+              
+            </Link>
+          </article>
+
+          {/* Project 7 — Firebase Chat */}
+          <article className="project-card">
+            <header className="project-header">
+              <Link href="/projects/firebase-chat" className="project-title-link">
+                <h3 className="project-title">Firebase-Based Chat Application</h3>
+              </Link>
+              <span className="project-meta">React · Firebase Functions · Firestore</span>
+            </header>
+
+            <p className="project-summary text-muted">
+              Full-stack chat system built with real-time messaging, user logic,
+              and cloud-hosted backend functions.
+            </p>
+
+            <ul className="project-points">
+              <li>Implemented UI and state management with React.</li>
+              <li>Developed backend logic using Firebase Cloud Functions and Firestore.</li>
+            </ul>
+
+            
+          </article>
+
         </div>
       </div>
     </section>
