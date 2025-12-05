@@ -57,6 +57,8 @@ personal-website/
 │  └─ ThemeToggle.tsx
 │
 └─ public/
+   └─ images/
+      └─ avatar.JPG
 ```
 
 ---
