@@ -5,6 +5,13 @@ type IntroSidebarProps = {
 export default function IntroSidebar({ activeSection }: IntroSidebarProps) {
   return (
     <div>
+      <img
+        src="/images/avatar.jpg"
+        alt="Jiaqi Li"
+        className="intro-avatar"
+      />
+
+      
       <h1 className="intro-name">Jiaqi (Jackie) Li</h1>
 
       <p className="intro-role">Software Engineer</p>
