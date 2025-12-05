@@ -76,7 +76,7 @@ body {
   box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
 }
 
-/* 大屏：三列 Grid，左 title，中 nav，右 toggle */
+
 .site-header-inner {
   max-width: 64rem;
   margin: 0 auto;
@@ -153,17 +153,17 @@ body {
   align-items: center;
 }
 
-/* 小屏标题缩小，让视觉更轻盈 */
+
 @media (max-width: 900px) {
   .site-title {
-    font-size: 0.78rem;      /* 原来 ~0.9rem，缩小一档 */
-    letter-spacing: 0.06em;  /* 紧一点更专业 */
+    font-size: 0.78rem;      
+    letter-spacing: 0.06em;  
   }
 }
 
 @media (max-width: 600px) {
   .site-title {
-    font-size: 0.72rem;      /* 手机更小一点 */
+    font-size: 0.72rem;     
     letter-spacing: 0.05em;
   }
 }
@@ -193,7 +193,7 @@ body {
     width: 35%;
     max-width: 260px;
     position: sticky;
-    top: 6rem; /* 避免被 header 遮挡 */
+    top: 6rem; 
   }
 
   .layout-main {
