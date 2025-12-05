@@ -199,3 +199,33 @@ section {
   text-decoration: underline;
 }
 
+/* ===== Transparent floating cards for Projects & Education ===== */
+
+.project-card {
+  position: relative;
+  padding: 1.1rem 1.25rem;
+  border-radius: 0.75rem;
+  background: transparent;              
+  border: 1px solid transparent;        
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.project-card:hover,
+.project-card:focus-within {
+  border-color: rgba(14, 165, 233, 0.35);   
+  background-color: rgba(14, 165, 233, 0.06); 
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08);
+  transform: translateY(-2px);
+}
+
+
+.project-card:active {
+  border-color: rgba(14, 165, 233, 0.5);
+  background-color: rgba(14, 165, 233, 0.12);
+  transform: translateY(-1px);
+}
