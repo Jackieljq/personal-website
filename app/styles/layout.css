@@ -238,7 +238,7 @@ html.theme-light {
     .layout-sidebar {
       width: 40%;
       position: sticky;
-      top: 5rem; /* 可以根据 header 高度调整，比如 4rem / 6rem */
+      top: 5rem; 
       align-self: flex-start;
     }
   
@@ -247,3 +247,23 @@ html.theme-light {
     }
   }
   
+ 
+@media (max-width: 900px) {
+  .page {
+    padding: 0 1.25rem 2.5rem;  
+  }
+
+  .layout-root {
+    margin-top: 2rem; 
+  }
+
+  .section {
+    margin-top: 2rem; 
+  }
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 0 1.5rem 2.5rem;
+  }
+}
