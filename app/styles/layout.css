@@ -47,13 +47,13 @@ body {
   transition: background-color 0.25s ease, color 0.25s ease;
 }
 
-/* 确保 Header 占满全宽 */
+
 .page {
   min-height: 100vh;
-  padding: 0 0 3rem; /* ❗ 永远不要给左右 padding，否则 header 会被挤进去 */
+  padding: 0 0 3rem; 
 }
 
-/* 内容的最大宽度与左右留白由这里控制 */
+
 .page-inner {
   max-width: 64rem;
   margin: 0 auto;
