@@ -49,12 +49,13 @@ html.theme-light {
   
   .page {
     min-height: 100vh;
-    padding: 0 1rem 3rem;
+    padding: 0 0 3rem;
   }
   
   .page-inner {
     max-width: 64rem;
     margin: 0 auto;
+    padding: 0 1rem;
   }
   
   .section {
@@ -250,7 +251,7 @@ html.theme-light {
  
 @media (max-width: 900px) {
   .page {
-    padding: 0 1.25rem 2.5rem;  
+    padding: 0 0.5rem 2.5rem;  
   }
 
   .layout-root {
@@ -264,7 +265,7 @@ html.theme-light {
 
 @media (max-width: 600px) {
   .page {
-    padding: 0 1.5rem 2.5rem;
+    padding: 0 0.5rem 2.5rem;
   }
 }
 
