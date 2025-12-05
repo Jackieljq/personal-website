@@ -49,7 +49,7 @@ html.theme-light {
   
   .page {
     min-height: 100vh;
-    padding: 0 0.5rem 3rem;
+    padding: 0 1rem 3rem;
   }
   
   .page-inner {
@@ -75,7 +75,7 @@ html.theme-light {
   .site-header-inner {
     max-width: 64rem;
     margin: 0 auto;
-    padding: 0.3rem 1rem;
+    padding: 0.25rem 0rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -265,5 +265,28 @@ html.theme-light {
 @media (max-width: 600px) {
   .page {
     padding: 0 1.5rem 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-header-inner {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .site-title {
+    font-size: 0.8rem;
+  }
+
+  .header-nav {
+    flex-wrap: wrap;         
+    justify-content: flex-start;
+    gap: 0.9rem;
+    font-size: 0.8rem;
+  }
+
+  .header-controls {
+    margin-left: auto;       
   }
 }
