@@ -126,14 +126,7 @@ export default function IntroSidebar({ activeSection }: IntroSidebarProps) {
       </div>
       {/* ------------------------------------------------ */}
 
-      <div className="hero-actions">
-        <a href="#projects" className="btn-outline">
-          View selected projects
-        </a>
-        <a href="#experience" className="hero-secondary-link">
-          View experience
-        </a>
-      </div>
+    
     </div>
   );
 }

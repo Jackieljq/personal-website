@@ -1,26 +1,34 @@
 export default function Hero() {
     return (
       <section id="about" className="section">
-        <p className="text-muted">
-          I recently completed my Master of Information Technology at the
-          University of Western Australia. I enjoy working at the intersection of
-          software engineering, data, and cloud—designing systems that are
-          well-structured, observable, and maintainable.
+       <p className="text-muted">
+        I recently completed my Master of Information Technology at the University of
+        Western Australia. I work across software engineering, data systems, and cloud
+        technologies, with a focus on building solutions that are maintainable,
+        observable, and reliable in real environments.
         </p>
+
         <p className="text-muted" style={{ marginTop: "0.75rem" }}>
-          My recent work includes building optimisation-based trading bots for
-          Bitcoin, designing a WA traffic fatality data warehouse in PostgreSQL
-          and Power BI, and developing an IoT smart garden system with ESP32,
-          Python, and a React dashboard. I like taking complex ideas and breaking
-          them down into small, testable steps.
+          I have hands-on experience delivering full-stack and backend systems, including
+          optimisation-based trading bots in Python, a PostgreSQL/Power BI data warehouse
+          for WA traffic fatality analysis, and an IoT smart garden system using ESP32,
+          Python, Flask, and React. I enjoy breaking complex problems into clear and
+          testable components.
         </p>
-        <p className="text-muted" style={{ marginTop: "0.75rem" }}>
-          I am detail-oriented, proactive, and comfortable working both
-          independently and with cross-functional teams. I enjoy clear
-          communication, documenting decisions, and iterating based on feedback.
-          I am currently looking for Junior / Graduate software engineering roles
-          where I can keep learning and contribute to real products.
-        </p>
+
+          <p className="text-muted" style={{ marginTop: "0.75rem" }}>
+          My technical background spans Python, TypeScript/JavaScript, React, SQL
+          databases, FastAPI, Git, Docker, cloud deployment workflows, and open-source
+          tools such as Mitmproxy, LiteLLM, and Langfuse. I work independently, document
+          decisions, communicate clearly, and support cross-functional teams.
+          </p>
+
+          <p className="text-muted" style={{ marginTop: "0.75rem" }}>
+            I am ready to contribute from day one and am actively seeking Junior /
+            Graduate Software Engineering roles where I can build real products, solve
+            practical problems, and continue growing as an engineer.
+          </p>
+
       </section>
     );
   }
