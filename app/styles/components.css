@@ -65,14 +65,25 @@
   color: var(--text-color);
 }
 
-/* Contact block */
+.contact-icons {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
 
-.contact-block {
-  margin-top: 0.9rem;
-  font-size: 0.85rem;
+.contact-icon {
   color: var(--muted-text);
-  display: grid;
-  gap: 0.25rem;
+  transition: color 0.2s ease, transform 0.15s ease;
+}
+
+.contact-icon:hover {
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.contact-icon svg {
+  width: 22px;
+  height: 22px;
 }
 
 /* Hero actions row */
