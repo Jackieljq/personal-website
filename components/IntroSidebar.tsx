@@ -1,4 +1,8 @@
-export default function IntroSidebar() {
+type IntroSidebarProps = {
+  activeSection: "about" | "experience" | "projects";
+};
+
+export default function IntroSidebar({ activeSection }: IntroSidebarProps) {
   return (
     <div>
       <h1 className="intro-name">Jiaqi (Jackie) Li</h1>
@@ -11,15 +15,38 @@ export default function IntroSidebar() {
       </p>
 
       <nav className="intro-nav" aria-label="Section navigation">
-        <a href="#about" className="intro-nav-item intro-nav-item-active">
+        <a
+          href="#about"
+          className={
+            "intro-nav-item" +
+            (activeSection === "about" ? " intro-nav-item-active" : "")
+          }
+          aria-current={activeSection === "about" ? "page" : undefined}
+        >
           <span className="intro-nav-line" />
           <span>ABOUT</span>
         </a>
-        <a href="#experience" className="intro-nav-item">
+
+        <a
+          href="#experience"
+          className={
+            "intro-nav-item" +
+            (activeSection === "experience" ? " intro-nav-item-active" : "")
+          }
+          aria-current={activeSection === "experience" ? "page" : undefined}
+        >
           <span className="intro-nav-line" />
           <span>EXPERIENCE</span>
         </a>
-        <a href="#projects" className="intro-nav-item">
+
+        <a
+          href="#projects"
+          className={
+            "intro-nav-item" +
+            (activeSection === "projects" ? " intro-nav-item-active" : "")
+          }
+          aria-current={activeSection === "projects" ? "page" : undefined}
+        >
           <span className="intro-nav-line" />
           <span>PROJECTS</span>
         </a>
