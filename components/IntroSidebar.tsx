@@ -6,7 +6,7 @@ export default function IntroSidebar({ activeSection }: IntroSidebarProps) {
   return (
     <div>
       <img
-        src="/images/avatar.jpg"
+        src="avatar.jpg"
         alt="Jiaqi Li"
         className="intro-avatar"
       />
