@@ -322,3 +322,12 @@ body {
 }
 
 
+
+/* Prevent header from covering section titles when using anchor navigation */
+#about,
+#skills,
+#experience,
+#projects,
+#education {
+  scroll-margin-top: 80px; 
+}
