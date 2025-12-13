@@ -5,7 +5,7 @@ export default function EducationSection() {
         <div className="section-heading">
           <h2 className="section-heading-title">Education</h2>
           <p className="section-heading-subtitle">
-            Formal training in software, data, cloud, and finance.
+            Academic background supporting software and data engineering.
           </p>
         </div>
 
@@ -15,13 +15,13 @@ export default function EducationSection() {
             <header className="project-header">
               <h3 className="project-title">Master of Information Technology</h3>
               <span className="project-meta">
-                University of Western Australia · Perth
+                University of Western Australia · Perth · 2023 – 2025
               </span>
             </header>
 
             <p className="project-summary text-muted">
-              Two-year full-time program covering software engineering, cloud computing,
-              data warehousing, relational databases, IoT, BI, and cyber security.
+              Focused on software engineering, cloud computing, data systems,
+              and applied engineering projects.
             </p>
           </article>
 
@@ -30,13 +30,13 @@ export default function EducationSection() {
             <header className="project-header">
               <h3 className="project-title">Bachelor of Finance</h3>
               <span className="project-meta">
-                Guangdong University of Finance · China
+                Guangdong University of Finance · China · 2018 – 2022
               </span>
             </header>
 
             <p className="project-summary text-muted">
-              Four-year program focused on corporate finance, financial management,
-              accounting, taxation, and management principles.
+              Built strong analytical and quantitative foundations supporting
+              data-driven and technical problem solving.
             </p>
           </article>
         </div>

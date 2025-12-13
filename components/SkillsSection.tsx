@@ -2,7 +2,7 @@ export default function SkillsSection() {
   return (
     <section id="skills" className="section">
       <div className="section-row">
-        {/* Left column (title + subtitle) */}
+        {/* Left column */}
         <div className="section-heading">
           <h2 className="section-heading-title">Skills</h2>
           <p className="section-heading-subtitle">
@@ -12,108 +12,41 @@ export default function SkillsSection() {
 
         {/* Right column */}
         <div className="section-body">
-          <div className="skills-advanced">
-            {/* Main skills (left) */}
-            <div className="skills-main">
-              {/* Category 1 */}
-              <div className="skills-row">
-                <div className="skills-row-head">
-                  <h3 className="skills-row-title">Languages</h3>
-                  <p className="skills-row-desc">Daily drivers and scripting.</p>
-                </div>
-                <div className="skills-chips">
-                  <span className="skill-pill">Python</span>
-                  <span className="skill-pill">TypeScript</span>
-                  <span className="skill-pill">JavaScript</span>
-                  <span className="skill-pill">SQL</span>
-                </div>
-              </div>
-
-              {/* Category 2 */}
-              <div className="skills-row">
-                <div className="skills-row-head">
-                  <h3 className="skills-row-title">Frameworks</h3>
-                  <p className="skills-row-desc">Frontend + backend work.</p>
-                </div>
-                <div className="skills-chips">
-                  <span className="skill-pill">React</span>
-                  <span className="skill-pill">Next.js</span>
-                  <span className="skill-pill">FastAPI</span>
-                  <span className="skill-pill">PyQt</span>
-                  <span className="skill-pill">Flask</span>
-                </div>
-              </div>
-
-              {/* Category 3 */}
-              <div className="skills-row">
-                <div className="skills-row-head">
-                  <h3 className="skills-row-title">Data</h3>
-                  <p className="skills-row-desc">Modeling, ETL, analytics.</p>
-                </div>
-                <div className="skills-chips">
-                  <span className="skill-pill">PostgreSQL</span>
-                  <span className="skill-pill">MySQL</span>
-                  <span className="skill-pill">SQLite</span>
-                  <span className="skill-pill">Pandas</span>
-                  <span className="skill-pill">Power BI</span>
-                </div>
-              </div>
-
-              {/* Category 4 */}
-              <div className="skills-row">
-                <div className="skills-row-head">
-                  <h3 className="skills-row-title">Cloud & DevOps</h3>
-                  <p className="skills-row-desc">Build, deploy, automate.</p>
-                </div>
-                <div className="skills-chips">
-                  <span className="skill-pill">Docker</span>
-                  <span className="skill-pill">GitHub Actions</span>
-                  <span className="skill-pill">AWS (Foundational)</span>
-                  <span className="skill-pill">Linux</span>
-                  <span className="skill-pill">Bash</span>
-                  <span className="skill-pill">SSH Automation</span>
-                </div>
-              </div>
+          <div className="skills-list-wrapper">
+            {/* Group 1 */}
+            <div className="skills-item">
+              <h3 className="skills-role">Languages & Frameworks</h3>
+              <ul className="skills-list">
+                <li>Python</li>
+                <li>TypeScript / JavaScript</li>
+                <li>React / Next.js</li>
+                <li>FastAPI / PyQt</li>
+                <li>SQL (PostgreSQL, MySQL, SQLite)</li>
+              </ul>
             </div>
 
-            {/* Highlights (right) */}
-            <aside className="skills-side">
-              <div className="skills-highlight">
-                <div className="skills-highlight-head">
-                  <p className="skills-highlight-kicker">HIGHLIGHTS</p>
-                  <h3 className="skills-highlight-title">Where I’ve used these skills</h3>
-                </div>
+            {/* Group 2 */}
+            <div className="skills-item">
+              <h3 className="skills-role">Tools & Platforms</h3>
+              <ul className="skills-list">
+                <li>Docker & GitHub Actions</li>
+                <li>AWS (Foundational)</li>
+                <li>Linux / Bash / SSH Automation</li>
+                <li>Power BI / Pandas</li>
+                <li>Open-source tooling (Mitmproxy, LiteLLM)</li>
+              </ul>
+            </div>
 
-                <ul className="skills-highlight-list">
-                  <li>
-                    Built and maintained a <strong>4G base-station OAM desktop client</strong> with
-                    Python + PyQt, integrating SSH workflows for configuration and monitoring.
-                  </li>
-                  <li>
-                    Shipped <strong>full-stack web features</strong> using React/Next.js with clean
-                    component structure and deployment-ready workflows.
-                  </li>
-                  <li>
-                    Designed <strong>data pipelines</strong> (cleaning → modeling → reporting) with
-                    SQL + Pandas and dashboards in Power BI.
-                  </li>
-                  <li>
-                    Automated repeatable tasks with <strong>Linux/Bash</strong> and CI with GitHub Actions.
-                  </li>
-                </ul>
-
-                <div className="skills-mini">
-                  <div className="skills-mini-item">
-                    <span className="skills-mini-label">Focus</span>
-                    <span className="skills-mini-value">Practical systems, clean delivery</span>
-                  </div>
-                  <div className="skills-mini-item">
-                    <span className="skills-mini-label">Strength</span>
-                    <span className="skills-mini-value">Integration + troubleshooting</span>
-                  </div>
-                </div>
-              </div>
-            </aside>
+            {/* Group 3 */}
+            <div className="skills-item">
+              <h3 className="skills-role">Core Capabilities</h3>
+              <ul className="skills-list">
+                <li>Full-stack Web Development</li>
+                <li>Data Engineering & ETL Pipelines</li>
+                <li>Cloud Deployment & DevOps Workflow</li>
+                <li>System Design & Technical Documentation</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
