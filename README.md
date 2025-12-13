@@ -108,42 +108,6 @@ This link is public and always serves the latest code from the `main` branch.
 
 ---
 
-## ▶ Deploy to Vercel (One-Click)
-
-1. Go to **https://vercel.com**
-2. Log in with GitHub
-3. Click **Add New Project**
-4. Select your repository **personal-website**
-5. Keep all default settings:
-   - Framework: **Next.js**
-   - Build Command: `next build`
-   - Output Directory: `.next`
-6. Click **Deploy**
-
-After a few seconds, your project will be live.
-
----
-
-## ▶ Automatic Deployment (Git Push → Auto Deploy)
-
-Every push to GitHub automatically triggers a new Vercel deployment.
-
-Example workflow:
-
-```bash
-git add .
-git commit -m "update website layout"
-git push
-```
-
-Vercel will automatically:
-- Detect the push
-- Build your project
-- Deploy the new version
-- Provide a unique preview URL for each commit
-
----
-
 ## 📝 License
 
 MIT License - feel free to use this project for your own portfolio!
