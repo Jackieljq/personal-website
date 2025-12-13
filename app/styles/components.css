@@ -275,3 +275,14 @@
   line-height: 1.5;
   color: var(--muted-text);
 }
+/* Skills links look like normal text */
+#skills .skills-list a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Subtle hover feedback */
+#skills .skills-list a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}

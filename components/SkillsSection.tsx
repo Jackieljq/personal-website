@@ -17,11 +17,11 @@ export default function SkillsSection() {
             <div className="skills-item">
               <h3 className="skills-role">Languages & Frameworks</h3>
               <ul className="skills-list">
-                <li>Python</li>
-                <li>TypeScript / JavaScript</li>
-                <li>React / Next.js</li>
-                <li>FastAPI / PyQt</li>
-                <li>SQL (PostgreSQL, MySQL, SQLite)</li>
+                <li><a href="https://www.python.org" target="_blank" rel="noopener noreferrer">Python</a></li>
+                <li><a href="https://www.typescriptlang.org" target="_blank" rel="noopener noreferrer">TypeScript</a> / <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">JavaScript</a></li>
+                <li><a href="https://react.dev" target="_blank" rel="noopener noreferrer">React</a> / <a href="https://nextjs.org" target="_blank" rel="noopener noreferrer">Next.js</a></li>
+                <li><a href="https://fastapi.tiangolo.com" target="_blank" rel="noopener noreferrer">FastAPI</a> / <a href="https://riverbankcomputing.com/software/pyqt/" target="_blank" rel="noopener noreferrer">PyQt</a></li>
+                <li><a href="https://www.postgresql.org" target="_blank" rel="noopener noreferrer">PostgreSQL</a>, <a href="https://www.mysql.com" target="_blank" rel="noopener noreferrer">MySQL</a>, <a href="https://www.sqlite.org" target="_blank" rel="noopener noreferrer">SQLite</a></li>
               </ul>
             </div>
 
@@ -29,11 +29,11 @@ export default function SkillsSection() {
             <div className="skills-item">
               <h3 className="skills-role">Tools & Platforms</h3>
               <ul className="skills-list">
-                <li>Docker & GitHub Actions</li>
-                <li>AWS (Foundational)</li>
-                <li>Linux / Bash / SSH Automation</li>
-                <li>Power BI / Pandas</li>
-                <li>Open-source tooling (Mitmproxy, LiteLLM)</li>
+                <li><a href="https://www.docker.com" target="_blank" rel="noopener noreferrer">Docker</a> & <a href="https://github.com/features/actions" target="_blank" rel="noopener noreferrer">GitHub Actions</a></li>
+                <li><a href="https://aws.amazon.com" target="_blank" rel="noopener noreferrer">AWS (Foundational)</a></li>
+                <li><a href="https://www.kernel.org" target="_blank" rel="noopener noreferrer">Linux</a> / <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noopener noreferrer">Bash</a> / SSH Automation</li>
+                <li><a href="https://powerbi.microsoft.com" target="_blank" rel="noopener noreferrer">Power BI</a> / <a href="https://pandas.pydata.org" target="_blank" rel="noopener noreferrer">Pandas</a></li>
+                <li><a href="https://mitmproxy.org" target="_blank" rel="noopener noreferrer">Mitmproxy</a>, <a href="https://docs.litellm.ai" target="_blank" rel="noopener noreferrer">LiteLLM</a></li>
               </ul>
             </div>
 
