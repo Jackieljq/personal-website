@@ -5,7 +5,7 @@ export default function EducationSection() {
         <div className="section-heading">
           <h2 className="section-heading-title">Education</h2>
           <p className="section-heading-subtitle">
-            Academic background supporting software and data engineering.
+            Academic background supporting software, data, and systems engineering.
           </p>
         </div>
 
@@ -13,15 +13,37 @@ export default function EducationSection() {
           {/* Master */}
           <article className="project-card">
             <header className="project-header">
-              <h3 className="project-title">Master of Information Technology</h3>
+              <h3 className="project-title">
+                <a
+                  href="https://www.uwa.edu.au/study/courses/master-of-information-technology"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-link-reset"
+                >
+                  Master of Information Technology
+                </a>
+              </h3>
               <span className="project-meta">
-                University of Western Australia · Perth · 2023 – 2025
+                <a
+                  href="https://www.uwa.edu.au"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-link-reset"
+                >
+                  University of Western Australia
+                </a>{" "}
+                · Perth · 2023 – 2025
               </span>
             </header>
 
             <p className="project-summary text-muted">
-              Focused on software engineering, cloud computing, data systems,
-              and applied engineering projects.
+              Coursework covered software requirements and design, project management and
+              engineering practice, software testing and quality assurance, computational
+              thinking and Python programming, open source tools and scripting, agile web
+              development, cloud computing, relational database management systems, data
+              warehousing, cyber security fundamentals, Internet of Things, business
+              intelligence, supply chain analytics, and a capstone project focused on
+              applied system development.
             </p>
           </article>
 
@@ -35,8 +57,8 @@ export default function EducationSection() {
             </header>
 
             <p className="project-summary text-muted">
-              Built strong analytical and quantitative foundations supporting
-              data-driven and technical problem solving.
+              Developed strong analytical, quantitative, and problem-solving skills,
+              supporting data-driven and technical decision-making.
             </p>
           </article>
         </div>
