@@ -1,5 +1,5 @@
 type IntroSidebarProps = {
-  activeSection: "about" | "experience" | "projects";
+  activeSection: "about" | "experience" | "projects" | "education";
 };
 
 export default function IntroSidebar({ activeSection }: IntroSidebarProps) {
@@ -57,6 +57,17 @@ export default function IntroSidebar({ activeSection }: IntroSidebarProps) {
           <span className="intro-nav-line" />
           <span>PROJECTS</span>
         </a>
+        <a
+    href="#education"
+    className={
+      "intro-nav-item" +
+      (activeSection === "education" ? " intro-nav-item-active" : "")
+    }
+    aria-current={activeSection === "education" ? "page" : undefined}
+  >
+    <span className="intro-nav-line" />
+    <span>EDUCATION</span>
+  </a>
       </nav>
 
       {/* ------------------------------------------------ */}

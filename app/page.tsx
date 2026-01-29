@@ -10,7 +10,7 @@ import ProjectsSection from "../components/ProjectsSection";
 import EducationSection from "../components/EducationSection";
 import Footer from "../components/Footer";
 
-const SECTION_IDS = ["about", "experience", "projects"] as const;
+const SECTION_IDS = ["about", "experience", "projects", "education"] as const;
 type SectionId = (typeof SECTION_IDS)[number];
 
 export default function Home() {
